@@ -23,14 +23,17 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "IDI_1"
+define version_stage = "IDI "
+define version_hotfix = "1"
+
+define config.version = version_stage+"v"+version_hotfix
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
-A visual novel by Sphis_Sinco
+define gui.about = _p(f"""
+A visual novel by Sphis_Sinco. {version_stage} v{version_hotfix}
 """)
 
 
