@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00build.rpy", line 644, in script
+    init 1500 python in build:
+  File "renpy/common/00build.rpy", line 656, in <module>
+    directory_name += "-" + version
+TypeError: can only concatenate str (not "int") to str
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00build.rpy", line 644, in script
+    init 1500 python in build:
+  File "D:\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00build.rpy", line 656, in <module>
+    directory_name += "-" + version
+TypeError: can only concatenate str (not "int") to str
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.7.25031702
