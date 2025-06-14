@@ -1,24 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00build.rpy", line 644, in script
-    init 1500 python in build:
-  File "renpy/common/00build.rpy", line 656, in <module>
-    directory_name += "-" + version
-TypeError: can only concatenate str (not "int") to str
+  File "game/script.rpy", line 23, in script
+    show dinjo normal at truecenter, doublesize
+  File "game/script.rpy", line 23, in <module>
+    show dinjo normal at truecenter, doublesize
+NameError: name 'doublesize' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00build.rpy", line 644, in script
-    init 1500 python in build:
-  File "D:\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00build.rpy", line 656, in <module>
-    directory_name += "-" + version
-TypeError: can only concatenate str (not "int") to str
+  File "game/script.rpy", line 23, in script
+    show dinjo normal at truecenter, doublesize
+  File "D:\renpy-8.3.7-sdk\renpy\ast.py", line 1124, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 23, in <module>
+    show dinjo normal at truecenter, doublesize
+NameError: name 'doublesize' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
+Dojin v3
+Fri Jun 13 20:04:28 2025

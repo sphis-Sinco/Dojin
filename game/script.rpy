@@ -20,7 +20,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show dinjo normal
+    show dinjo normal at truecenter, doublesize
 
     # These display lines of dialogue.
 
